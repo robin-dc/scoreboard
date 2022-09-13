@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.score, button{
+    font-family: sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(bc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.container{
+    width:50%;
+    border-radius: 20px;
+    margin:0 auto;
+    padding:4rem 0 9rem 0;
+    display:flex;
+    align-items: center;
+    background-color: rgb(3, 3, 87);
+    border: 5px solid white;
+    position: relative;
+}
+
+.score{
+    background-color: black;
+    color:#F94F6D;
+    border-radius: 10px;
+}
+.box{
+    text-align: center;
+    gap:1rem;
+    width:50%;
+    padding:0 5rem;
+}
+.box h1:nth-child(2){
+    width:100%;
+    font-size: clamp(6vw, 10rem, 10vw);
+    margin-bottom: 1rem;
+}
+
+.box h1:first-child{
+    color:white;
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+.btn{
+    display:flex;
+    justify-content: space-around;
+}
+button{
+    border: 2px solid #9AABD8;
+    color:#9AABD8;
+    background-color: transparent;
+    padding:10px;
+    border-radius: 10px;
+    font-size: clamp(1.6vw, 1.6rem, 3vw);
+    font-weight: 500;
+    cursor: pointer;
+}
+#new-game{
+    position:absolute;
+    bottom:1rem;
+    right: 37.7%;
+}
+@media(max-width:900px){
+    .container{
+        width:80%;
+        padding:2rem 0 5rem 0;
+    }
+    .box{
+        padding: 0 10px;
+    }
+    #new-game{
+        right:36%;
+    }
+
+}
